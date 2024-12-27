@@ -86,4 +86,6 @@ def conversation_agent1():
 def conversation_agent2(role, ques, resp, para):
     agent2_response = agent2.invoke(prompt2.format(role = role, question = ques, response = resp, param = para))
     print(agent2_response.content)
+    
+    
 conversation_agent1()
